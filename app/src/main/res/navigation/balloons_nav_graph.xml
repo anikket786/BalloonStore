@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/balloons_nav_graph"
+    app:startDestination="@id/balloonListFragment">
+
+    <fragment
+        android:id="@+id/balloonListFragment"
+        android:name="com.app.general.balloonstore.presentation.balloons.ui.BalloonListFragment"
+        android:label="fragment_balloon_list"
+        tools:layout="@layout/fragment_balloon_list" >
+        <action
+            android:id="@+id/action_balloonListFragment_to_balloonsDetailsFragment"
+            app:destination="@id/balloonsDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_balloonListFragment_to_favoriteBalloonsFragment"
+            app:destination="@id/favoriteBalloonsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/balloonsDetailsFragment"
+        android:name="com.app.general.balloonstore.presentation.balloons.ui.BalloonsDetailsFragment"
+        android:label="fragment_balloons_view_pager"
+        tools:layout="@layout/fragment_balloons_details" >
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteBalloonsFragment"
+        android:name="com.app.general.balloonstore.presentation.balloons.ui.FavoriteBalloonsFragment"
+        android:label="fragment_favorite_balloons"
+        tools:layout="@layout/fragment_favorite_balloons" />
+</navigation>

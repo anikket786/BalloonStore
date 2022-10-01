@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Balloon Store</string>
+    <string name="internet_not_available">Internet not available.</string>
+    <string name="something_went_wrong">Something went wrong.</string>
+    <string name="my_balloons">My balloons</string>
+    <string name="balloon_price">Price: %1$s kr</string>
+    <string name="available_since">Available since:- %1$s</string>
+    <string name="order">ORDER</string>
+    <string name="custom_message">Custom message…</string>
+    <string name="save">SAVE</string>
+    <string name="saved_successfully">Saved Successfully, you can view it in My balloons section</string>
+    <string name="custom_message_title">Custom message:</string>
+</resources>
