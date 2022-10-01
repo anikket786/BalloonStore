@@ -5,10 +5,6 @@
 3. Run the app by clicking on Run button at top menu bar within Android Studio.
 4. Let the build and installation process to complete once completed it can be tested.
 
-# Improvements
-
-1. Due to limited bandwidth, I was not able to add some features like giving edit option to custom messages in My balloons section.
-
 # App architecture & libraries used
 
 1. Follows MVVM architecture
